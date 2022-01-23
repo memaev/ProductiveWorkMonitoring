@@ -115,6 +115,4 @@ while (1):
     if (is_here==0):
         decrement()
     
-    k = cv2.waitKey(30000)&0xff
-    if (k==27):
-        break
+    cv2.waitKey(30000)
