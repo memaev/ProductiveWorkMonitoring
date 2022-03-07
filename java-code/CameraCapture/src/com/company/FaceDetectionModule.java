@@ -1,5 +1,6 @@
 package com.company;
 
+
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfRect;
@@ -8,11 +9,10 @@ import org.opencv.videoio.VideoCapture;
 
 public class FaceDetectionModule{
 
-    int checkIfSitting(){
-        System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
-        //change xmlFile to yours path
-        String xmlFile = "C:/Users/progr/IdeaProjects/CameraCapture/src/com/company/haarcascade_frontalface_alt2.xml";
+    static{ System.loadLibrary(Core.NATIVE_LIBRARY_NAME);}
 
+    int checkIfSitting(){
+        String xmlFile = "./java-code/CameraCapture/src/com/company/haarcascade_frontalface_alt2.xml";
 
         VideoCapture cap = new VideoCapture(0);
         while(true) {

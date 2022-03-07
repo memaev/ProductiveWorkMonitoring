@@ -12,6 +12,7 @@ public class AppsCheckingModule {
             BufferedReader input = new BufferedReader(new InputStreamReader(p.getInputStream()));
             while((process_name=input.readLine())!=null){
                 if (checkIfWorkingProcess(process_name)) return true;
+                System.out.println("Task: " + process_name);
             }
         }catch(Exception e){
             e.printStackTrace();
