@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+Manifest-Version: 1.0
+Main-Class: com.company.FaceDetectionModule
+
+=======
+Manifest-Version: 1.0
+Main-Class: com.company.FaceDetectionModule
+
+>>>>>>> origin/main

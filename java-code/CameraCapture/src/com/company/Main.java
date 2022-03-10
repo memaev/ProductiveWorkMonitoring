@@ -12,20 +12,18 @@ public class Main {
             int a = faceDetectionModule.checkIfSitting();
             if (a==1){
                 ++sum;
-                //TODO: Fix this (problem with appsCheckingModule):
-                //if (appsCheckingModule.checkIfWorking()){System.out.println("working");}
-                //else System.out.println("resting bcs");
+                if (appsCheckingModule.checkIfWorking()){System.out.println("working");}
+                else System.out.println("resting, no working apps opened");
 
             }else{
                 --sum;
-                System.out.println("resting");
+                System.out.println("resting, not on the working desk");
             }
             System.out.println(i);
         }
 
-        serverClient.sendInfo(sum+10);
+//        serverClient.sendInfo(sum+10);
 
         System.out.println(faceDetectionModule.checkIfSitting());
-        
     }
 }

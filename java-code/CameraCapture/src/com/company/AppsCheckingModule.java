@@ -10,17 +10,20 @@ public class AppsCheckingModule {
             String process_name;
             Process p = Runtime.getRuntime().exec(System.getenv("windir")+"\\system32\\"+"tasklist.exe");
             BufferedReader input = new BufferedReader(new InputStreamReader(p.getInputStream()));
-            while((process_name=input.readLine())!=null){
-                if (checkIfWorkingProcess(process_name)) return true;
-                System.out.println("Task: " + process_name);
+            while ((process_name = input.readLine()) != null) {
+                if (!process_name.trim().equals("")) {
+                    process_name = process_name.substring(0, process_name.indexOf(' '));
+                    if (checkIfWorkingProcess(process_name)) return true;
+                }
             }
+
         }catch(Exception e){
             e.printStackTrace();
         }
         return false;
     }
 
-    boolean checkIfWorkingProcess(String proc){
+    private boolean checkIfWorkingProcess(String proc){
         switch(proc){
             case "idea64.exe":
             case "studio32.exe":
@@ -33,10 +36,9 @@ public class AppsCheckingModule {
             case "pycharm64.exe":
             case "pycharm32.exe":
             case "notepad.exe": {
-                return true;
+            return true;
             }
         }
         return false;
     }
-
 }
