@@ -5,6 +5,7 @@ import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfRect;
 import org.opencv.objdetect.CascadeClassifier;
+import org.opencv.osgi.OpenCVInterface;
 import org.opencv.videoio.VideoCapture;
 
 public class FaceDetectionModule{

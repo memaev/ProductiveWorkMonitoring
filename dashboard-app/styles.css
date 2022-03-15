@@ -1,0 +1,118 @@
+/* Tags */
+body {
+    position: absolute;
+    background-color: rgba(160, 162, 243, 0.6);
+    width: 800px ;
+    height: 550px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+
+    padding-left: 13px;
+}
+
+h1{
+    position: absolute;
+    width: 97px;
+    height: 23px;
+
+    color: #fff;
+    
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 23px;
+}
+
+
+/* Classes */
+.div_title{
+    position: absolute;
+    width: auto;
+    height: 13px;
+    top: 3px;
+    left: 15px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 13px;
+
+    color: #000;
+}
+
+/* Ids */
+#work_div{
+    position: absolute;
+    width: 462px;
+    height: 400px;
+    top: 62px;
+
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+
+#work_charts{
+    position: absolute;
+    width: 433px;
+    height: 215px;
+    left: 50px;
+    top: 60px;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 14px;
+    
+    color: #000;
+}
+
+#advice_div{
+    position: relative;
+    width: 201px;
+    height: 82px;
+    left: 483px;
+    top: 62px;
+
+    padding-bottom: 10px;
+
+    background: #fff;
+    border-radius: 4px;
+}
+
+#advice_title{
+    position: absolute;
+    width: 33px;
+    height: 13px;
+    left: 13px;
+    top: 8px;
+
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 13px;
+
+    color: #000;
+}
+
+#advice_text{
+    position: absolute;
+    width: 180px;
+    height: 28px;
+    left: 13px;
+    top: 31px;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 13px;
+     
+    color: #000;
+}
+
+#todo_div{
+    position: absolute;
+    width: 201px;
+    height: 290px;
+    left: 496px;
+    top: 170px;
+
+    background: #fff;
+    border-radius: 4px;
+}

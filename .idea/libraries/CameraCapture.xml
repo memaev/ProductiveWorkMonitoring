@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CameraCapture">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/java-code/CameraCapture/out/artifacts/CameraCapture_jar/CameraCapture.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

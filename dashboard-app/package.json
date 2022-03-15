@@ -1,0 +1,15 @@
+{
+  "name": "first-electron-app",
+  "version": "1.0.0",
+  "description": "some desc",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "programmerc11",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^3.7.1",
+    "electron": "^17.1.2"
+  }
+}
